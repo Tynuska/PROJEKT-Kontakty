@@ -42,16 +42,23 @@ h1 {
     flex-wrap: wrap;
     gap: 10px;
     margin: 0;
-
   }
+
   .container .card {
     flex: 1 1 48%;
     margin: 0;
+    display: flex;
+  }
+
+  .card__right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 15px;
   }
 }
 
 @media screen and (min-width: 960px) {
-
   .container .card {
     flex: 1 1 calc(100% / 4.5);
   }
